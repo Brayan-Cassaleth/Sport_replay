@@ -188,9 +188,6 @@ aside{
 
 .informacion2 div button:hover{
     cursor: pointer;
-    width: 205px;
-    height: 35px;
-    font-size: 18px;
     box-shadow: 5px 5px 20px black;
 }
 
@@ -278,9 +275,6 @@ aside{
 }
 
 .consulta .botones button:hover{
-    height: 45px;
-    width: 210px;
-    font-size: 16px;
     cursor: pointer;
     box-shadow: 5px 5px 20px black;
 }

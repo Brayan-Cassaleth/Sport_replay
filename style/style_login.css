@@ -10,15 +10,15 @@ body{
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat;
     background-attachment: fixed; /* Opcional */
-    height: 720px;
-    padding: 20px;
+    height: 100vh;
+    padding: 50px;
 }
 
 .contenido form{
     border: 1px solid black;
     border-radius: 10px;
     width: 500px;
-    height: 700px;
+    height: 300px;
     margin: auto;
     background: #0C1014;
     color: aliceblue;
@@ -26,27 +26,26 @@ body{
     box-shadow: 20px 20px 20px black;
 }
 
-.contenido form input, label, h1,h4{
+.contenido form h1{
     margin-left: 20px;
     margin-bottom: 20px;
-    width: 450px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 20px;
+}
+
+.contenido form input{
+    margin-left: 20px;
+    width: 430px;
     height: 30px;
     border-radius: 5px;
-    border: none;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 20px;
 }
 
-.contenido form textarea{
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 450px;
-    height: 60px;
-    border-radius: 5px;
-    border: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.contenido form .solicitar{
+.contenido form .iniciar{
     margin-left: 20px;
     margin-bottom: 10px;
     width: 450px;
@@ -59,12 +58,7 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-label::after {
-  content: " *";
-  color: #ff0000;
-}
-
-.contenido form .solicitar:hover{
+.contenido form .iniciar:hover{
     width: 451px;
     height: 36px;
     font-size: 16px;
@@ -73,7 +67,7 @@ label::after {
 }
 
 .contenido form a{
-    margin-left: 220px;
+    margin-left: 170px;
     width: 250px;
     height: 35px;
     border-radius: 5px;

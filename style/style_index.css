@@ -17,9 +17,9 @@ body{
 }
 
 .presentacion h1{
-    font-size: 60px;
-    margin: 10px auto 0%;
-    width: 900px;
+    font-size: 40px;
+    margin: 10px 100px 0%;
+    width: 600px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -27,174 +27,211 @@ body{
     justify-content: flex-end;
 }
 
-.presentacion h3{
-    font-size: 25px;
-    margin: 0% auto;
-    width: 900px;
+.presentacion p{
+    font-size: 80px;
+    margin: 0% 100px;
+    width: 500px;
+    font-size: 20px;
 }
 
 .presentacion .botones{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 20px auto;
-    width: 850px;
+    margin: 20px 100px;
+    width: 450px;   
 }
 
 .presentacion .botones .boton_1{
-    width: 400px;
-    height: 100px;
-    background: linear-gradient(to bottom, #009432, #006266);
+    width: 200px;
+    height: 50px;
+    background: #29A71A;
     color: aliceblue;
-    border-radius: 10px;
+    border-radius: 5px;
     border: whitesmoke;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    box-shadow: 5px 5px 20px black;
+    
 }
 
-.presentacion .botones .boton_1:hover{
+.presentacion .botones .boton_1:hover,
+.presentacion .botones .boton_2:hover{
     cursor: pointer;
-    width: 403px;
-    height: 103px;
+    box-shadow: 5px 5px 20px black;
 }
 
 .presentacion .botones .boton_2{
-    width: 400px;
-    height: 100px;
-    background: linear-gradient(to bottom, #3867d6, #1B1464);
+    width: 200px;
+    height: 50px;
     color: aliceblue;
-    border-radius: 10px;
-    border: whitesmoke;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #29A71A;
+}
+
+.presentacion .botones .boton_1 .texto_botones,
+.presentacion .botones .boton_2 .texto_botones{
+    margin-left: 10px;
+    width: 180px;
+}
+
+.informacion .como_funciona .funciones .seccion_informacion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.informacion .como_funciona .titulo_informacion{
+    margin: auto;
+    color: aliceblue;
+    width: 500px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.informacion .como_funciona .funciones .seccion_informacion .apartado{
+    width: 210px;
+    margin: auto;
+    text-align: center;
+}
+
+.informacion .como_funciona .funciones .seccion_informacion .apartado .imagen{
+    height: 80px;
+    border-radius: 30%;
+    margin-bottom: 0;
+}
+
+.informacion .como_funciona .funciones .seccion_informacion .apartado h3{
+    color: aliceblue;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.informacion .como_funciona .funciones .seccion_informacion .apartado p{
+    color: aliceblue;
+    margin-top: 0;
+}
+
+.consultar{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 1150px;
+    margin: auto;
+}
+
+.consultar .jugadores{
+    background-image: url("../img/imagen_consulta_jugadores.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 550px;
+    border: 1px solid #29A71A;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:aliceblue;
+}
+
+.consultar .compradores{
+    background-image: url("../img/imagen_consulta_canchas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 550px;
+    border: 1px solid #29A71A;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:aliceblue;
+}
+
+.consultar .jugadores h1,
+.consultar .compradores h1{
+    margin-left: 30px;
+}
+
+.consultar .jugadores p,
+.consultar .compradores p{
+    width: 300px;
+    margin-left: 30px;
+}
+
+.consultar .jugadores button,
+.consultar .compradores button{
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    color:aliceblue;
+    background: #29A71A;
+    border: none;
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+.consultar .jugadores button:hover,
+.consultar .compradores button:hover{
+    cursor: pointer;
     box-shadow: 5px 5px 20px black;
 }
 
-.presentacion .botones .boton_2:hover{
-    cursor: pointer;
-    width: 403px;
-    height: 103px;
+.consulta{
+    background-image: url("../img/fondo_jugador_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:aliceblue;
 }
 
-.presentacion .botones .boton_1 .texto{
-    height: 80px;
-    margin: auto auto;
-}
 
-.presentacion .botones .boton_2 .texto{
-    height: 80px;
-    margin: auto auto;
-}
 
-.presentacion .botones .boton_1 .titulo_boton_1{
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 0%;
-    grid-column: 2;
-    grid-row: 1;
-    width: 300px;
-    text-shadow: 2px 2px 5px black;
-}
-
-.presentacion .botones .boton_1 .subtitulo_boton_1{
-    font-size: 17px;
-    margin-top: 0%;
-    grid-column: 2;
-    grid-row: 2;
-    text-shadow: 2px 2px 5px black;
-}
-
-.presentacion .botones .boton_2 .titulo_boton_2{
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 0%;
-    grid-column: 2;
-    grid-row: 1;
-    width: 300px;
-    text-shadow: 2px 2px 5px black;
-}
-
-.presentacion .botones .boton_2 .subtitulo_boton_2{
-    font-size: 17px;
-    margin-top: 0%;
-    grid-column: 2;
-    grid-row: 2;
-    text-shadow: 2px 2px 5px black;
-}
-
-.presentacion .botones .icono_boton{
-    height: 70px;
-    grid-column: 1;
-    grid-row: 1/2;
-    margin: auto;
-}
-
-.informacion{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 1000px;
-    height: 300px;
-    margin: auto;
-    color: aliceblue;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px black;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.informacion .jugadores{
-    border-right: 1px solid whitesmoke;
-}
-
-.informacion .canchas{
+.consulta .contacto{
+    width: 700px;
+    height: 150px;
     margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 500px;
 }
 
-.informacion .jugadores button{
-    background: linear-gradient(to bottom, #009432, #006266);
-    color: aliceblue;
-    width: 200px;
+.consulta .contacto .informacion{
+    width: 500px;
+}
+
+.consulta .contacto h1{
+    margin-bottom: 0;
+    font-size: 30px;
+    width: 450px;
+}
+
+.consulta .contacto p{
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.consulta .contacto a{
+    text-decoration: none;
+}
+
+.consulta .contacto button{
     height: 40px;
-    font-size: 20px;
-    border-radius: 5px;
-    border: none;
-    margin-left: 100px;
-    box-shadow: 2px 2px 10px black;
-}
-
-.informacion .jugadores button:hover{
-    cursor: pointer;
-    width: 205px;
-    height: 42px;
-}
-
-.informacion .canchas button{
-    background: linear-gradient(to bottom, #3867d6, #1B1464);
-    color: aliceblue;
     width: 200px;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 5px;
+    font-size: 15px;
+    color:aliceblue;
+    background: #29A71A;
     border: none;
-    margin-left: 100px;
-    box-shadow: 2px 2px 10px black;
+    border-radius: 5px;
+    margin-top: 50px;
 }
 
-.informacion .canchas button:hover{
+.consulta .contacto button:hover{
     cursor: pointer;
-    width: 205px;
-    height: 42px;
+    box-shadow: 5px 5px 20px black;
 }
 
 footer{
-    color: aliceblue;
+    color: gray;
     display: flex;
     justify-content: center;
-}
-
-footer .logo_pie{
-    height: 50px;
-    margin-left: 50px;
-    border-radius: 5px;
-    margin-right: 20px;
 }

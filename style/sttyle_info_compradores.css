@@ -205,14 +205,11 @@ aside{
     background: #29A71A;
     border: none;
     border-radius: 5px;
-    box-shadow: 5px 5px 20px black;
 }
 
 .consulta .contacto button:hover{
-    height: 45px;
-    width: 210px;
-    font-size: 16px;
     cursor: pointer;
+    box-shadow: 5px 5px 20px black;
 }
 
 .consulta .contacto button img{
