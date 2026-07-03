@@ -5,6 +5,7 @@ body{
     background-color: #0C1014;
 }
 
+
 .presentacion{
     width: 100%;
     height: 450px;
@@ -177,7 +178,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 200px;
+    height: 180px;
     border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -228,10 +229,4 @@ body{
 .consulta .contacto button:hover{
     cursor: pointer;
     box-shadow: 5px 5px 20px black;
-}
-
-footer{
-    color: gray;
-    display: flex;
-    justify-content: center;
 }

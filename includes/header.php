@@ -16,9 +16,8 @@
                 <li>Planes</li>
                 <li>Contacto</li>
             </ul>
-            <button>Inicio de sesion</button>
+            <a href="../pages/login.html"><button>Inicio de sesion</button></a>
         </nav>
     </header>
-    
 </body>
 </html>

@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style_index.css">
+    <link rel="stylesheet" href="../style/style_header.css">
+    <link rel="stylesheet" href="../style/style_index.css">
+    <link rel="stylesheet" href="../style/style_footer.css">
     <title>sport Replay</title>
-    
 </head>
 <body>
+    
+    <?php include "../includes/header.php" ?>
+
     <div class="presentacion">
         <div>
             <h1>Revive tus partidos de futbol cuando quieras.</h1>
@@ -28,22 +32,22 @@
             <dic class="funciones">
                 <div class="seccion_informacion">
                     <div class="apartado">
-                        <img src="img/icon/crear_cuenta.png" alt="" class="imagen">
+                        <img src="../img/icon/crear_cuenta.png" alt="" class="imagen">
                         <h3>Crea tu cuenta</h3>
                         <p>Registrate gratis en menos de 1 minuto.</p>
                     </div>
                     <div class="apartado">
-                        <img src="img/icon/logo_camara.png" alt="" class="imagen">
+                        <img src="../img/icon/logo_camara.png" alt="" class="imagen">
                         <h3>Juega tu partido</h3>
                         <p>Las camaras graban automaticamente.</p>
                     </div>
                     <div class="apartado">
-                        <img src="img/icon/logo_nube.png" alt="" class="imagen">
+                        <img src="../img/icon/logo_nube.png" alt="" class="imagen">
                         <h3>Revive y analiza</h3>
                         <p>Mira y analiza tu partido desde cualquier lugar.</p>
                     </div>
                     <div class="apartado">
-                        <img src="img/icon/compartir.png" alt="" class="imagen">
+                        <img src="../img/icon/compartir.png" alt="" class="imagen">
                         <h3>Comparte</h3>
                         <p>Descarga y comparte tus mejores momentos.</p>
                     </div>
@@ -55,12 +59,12 @@
         <div class="jugadores">
             <h1>Soy un jugador</h1>
             <p>Mira tus partidos, analiza tu rendimiento y comparte tus mejores jugadas.</p>
-            <a href="pages/info_jugadores.html"><button>Consultar</button></a>
+            <a href="info_jugadores.php"><button>Consultar</button></a>
         </div>
         <div class="compradores">
             <h1>Soy dueño de cancha</h1>
             <p>Ofrece el mejor servicio a tus clientes y genera ingresos adicionales.</p>
-            <a href="pages/info_compradores.html"><button>Consultar</button></a>
+            <a href="info_compradores.php"><button>Consultar</button></a>
         </div>
     </section>
     <section class="consulta">
@@ -76,9 +80,8 @@
             </div>
         </div>
     </section>
-    <hr>
-    <footer>
-        <p>&copy; 2026 SportZone. Todos los derechos reservados.</p>
-    </footer>
+
+    <?php include "../includes/footer.php" ?>
+
 </body>
 </html>
