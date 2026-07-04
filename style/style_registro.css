@@ -10,7 +10,7 @@ body{
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat;
     background-attachment: fixed; /* Opcional */
-    height: 720px;
+    height: 100vh;
     padding: 20px;
 }
 
@@ -18,7 +18,7 @@ body{
     border: 1px solid black;
     border-radius: 10px;
     width: 500px;
-    height: 700px;
+    height: 600px;
     margin: auto;
     background: #0C1014;
     color: aliceblue;

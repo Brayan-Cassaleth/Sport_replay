@@ -5,7 +5,6 @@ body{
     background-color: #0C1014;
 }
 
-
 .presentacion{
     width: 100%;
     height: 450px;
@@ -83,7 +82,7 @@ body{
     color: aliceblue;
     width: 500px;
     text-align: center;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .informacion .como_funciona .funciones .seccion_informacion .apartado{
@@ -173,6 +172,82 @@ body{
     box-shadow: 5px 5px 20px black;
 }
 
+.canchas{
+    color: aliceblue;
+}
+
+.canchas h1{
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+}
+
+.canchas .canchas_camaras{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 500px;
+    margin: 40px auto;
+}
+
+.canchas .canchas_camaras .data_canchas{
+    border: 1px solid gray;
+    width: 180px;
+    height: 260px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.canchas .canchas_camaras .data_canchas:hover{
+    box-shadow: 5px 5px 20px gray;
+    translate: -5px -5px;
+}
+
+.canchas .canchas_camaras .data_canchas a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.canchas .canchas_camaras .data_canchas a img{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.canchas .canchas_camaras .data_canchas a h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.canchas .canchas_camaras .data_canchas a p{
+    margin-top: 0;
+    margin-left: 10px
+}
+
+.canchas .canchas_camaras .data_canchas a button{
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    color:aliceblue;
+    background: #29A71A;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.canchas .ver_canchas{
+    text-decoration: none;
+    color: #29A71A;
+    margin-top: 20px;
+    margin-left: 530px;
+    font-size: 20px;
+}
+
+.canchas .ver_canchas:hover{
+    text-decoration: underline;
+}
+
 .consulta{
     background-image: url("../img/fondo_jugador_1.png");
     background-size: cover;
@@ -184,8 +259,6 @@ body{
     margin-bottom: 50px;
     color:aliceblue;
 }
-
-
 
 .consulta .contacto{
     width: 700px;

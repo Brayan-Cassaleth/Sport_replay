@@ -48,7 +48,8 @@ body{
 }
 
 .como_funciona h1{
-    margin-bottom: 0%;
+    margin-top: 40px;
+    margin-bottom: 0;
     font-size: 40px;
 }
 
@@ -73,8 +74,6 @@ body{
 }
 
 .informacion .beneficios div{
-    border-left: 1px solid white;
-    border-right:  1px solid white;
     width: 310px;
     text-align: center;
     padding-right: 5px;
@@ -105,13 +104,10 @@ body{
     font-size: 18px;
 }
 
-hr{
-    margin: 30px;
-}
-
 aside{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .funciones{
@@ -204,6 +200,8 @@ aside{
 .beneficios_para_ti .beneficios_jugadores{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: 1100px;
+    margin: auto;
 }
 
 .beneficios_para_ti .beneficios_jugadores .opciones{

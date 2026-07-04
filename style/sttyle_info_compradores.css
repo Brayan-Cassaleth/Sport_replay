@@ -73,11 +73,10 @@ body{
 }
 
 .informacion .beneficios div{
-    border-left: 1px solid white;
-    border-right:  1px solid white;
-    width: 310px;
+    width: 250px;
     text-align: center;
     padding-right: 5px;
+    margin: auto;
 }
 
 .informacion .beneficios .aumento{
@@ -103,10 +102,6 @@ body{
 
 .informacion .beneficios div p{
     font-size: 18px;
-}
-
-hr{
-    margin: 30px;
 }
 
 aside{
@@ -142,8 +137,6 @@ aside{
 }
 
 .informacion2 div{
-    border-left: 1px solid white;
-    border-right:  1px solid white;
     text-align: center;
 }
 
