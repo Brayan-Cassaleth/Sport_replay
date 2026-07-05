@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="../style/style_login.css">
+    <title>Login</title>
 </head>
 <body>
     <div class="contenido">
         <form action="">
             <h1>Inicio de sesion</h1><br>
 
-            <input type="text" placeholder="Usuario"><br>
+            <input type="text" placeholder="Usuario" id="Usuario"><br>
 
-            <input type="password" placeholder="Contraseña"><br>
+            <input type="password" placeholder="Contraseña" id="Clave"><br>
 
-            <button class="iniciar">Iniciar sesion</button>
+            <button type="button" class="iniciar" onclick="datos()">Iniciar sesion</button>
             <a href="solicitud_registro.html">¿No tiene una cuenta?</a>
         </form>
     </div>
+<script src="../js/prueba.js"></script>
 </body>
 </html>

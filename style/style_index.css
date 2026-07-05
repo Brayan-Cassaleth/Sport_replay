@@ -13,7 +13,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     color: aliceblue;
-    border-bottom: 1px solid white;
 }
 
 .presentacion h1{
@@ -41,23 +40,22 @@ body{
     width: 450px;   
 }
 
-.presentacion .botones .boton_1{
+.presentacion .botones a .boton_1{
     width: 200px;
     height: 50px;
     background: #29A71A;
     color: aliceblue;
     border-radius: 5px;
     border: whitesmoke;
-    
 }
 
-.presentacion .botones .boton_1:hover,
-.presentacion .botones .boton_2:hover{
+.presentacion .botones a .boton_1:hover,
+.presentacion .botones a .boton_2:hover{
     cursor: pointer;
-    box-shadow: 5px 5px 20px black;
+    box-shadow: 2px 2px 10px gray;
 }
 
-.presentacion .botones .boton_2{
+.presentacion .botones a .boton_2{
     width: 200px;
     height: 50px;
     color: aliceblue;
@@ -66,10 +64,13 @@ body{
     border: 1px solid #29A71A;
 }
 
-.presentacion .botones .boton_1 .texto_botones,
-.presentacion .botones .boton_2 .texto_botones{
+.presentacion .botones a .boton_1,
+.presentacion .botones a .boton_2{
     margin-left: 10px;
     width: 180px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
 }
 
 .informacion .como_funciona .funciones .seccion_informacion{
@@ -184,15 +185,16 @@ body{
 
 .canchas .canchas_camaras{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 500px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 1200px;
     margin: 40px auto;
 }
 
 .canchas .canchas_camaras .data_canchas{
     border: 1px solid gray;
-    width: 180px;
+    width: 200px;
     height: 260px;
+    padding: 10px;
     margin: auto;
     border-radius: 10px;
 }
@@ -222,18 +224,20 @@ body{
 
 .canchas .canchas_camaras .data_canchas a p{
     margin-top: 0;
+    margin-bottom: 0;
     margin-left: 10px
 }
 
 .canchas .canchas_camaras .data_canchas a button{
-    height: 30px;
+    height: 20px;
     width: 80px;
     font-size: 15px;
     color:aliceblue;
     background: #29A71A;
     border: none;
     border-radius: 5px;
-    margin: 0 10px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .canchas .ver_canchas{

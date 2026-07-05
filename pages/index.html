@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style_header.css">
     <link rel="stylesheet" href="../style/style_index.css">
     <link rel="stylesheet" href="../style/style_footer.css">
-    <title>sport Replay</title>
+    <title>Sport Replay</title>
 </head>
 <body>
     
@@ -14,9 +14,9 @@
         <nav class="navegacion">
             <img src="../img/Logo.png" alt="" class="logo">
             <ul>
-                <li>Inicio</li>
-                <li>Como funciona</li>
-                <li>Planes</li>
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="#como_funciona"><li>Como funciona</li></a>
+                <a href="info_jugadores.html#planes"><li>Planes</li></a>
                 <a href="#pie"><li>Contacto</li></a>
             </ul>
             <a href="../pages/login.html"><button>Inicio de sesion</button></a>
@@ -29,16 +29,12 @@
             <p>Camaras inteligentes que graban tus partidos automaticamente para que los vivas, analices y compartas cuando quieras.</p>
         </div>
         <div class="botones">
-            <button class="boton_1">
-                <p class="texto_botones">Ver canchas</p>
-            </button>
-            <button class="boton_2">
-                <p class="texto_botones">Crear cuenta</p>
-            </button>
+            <a href="#canchas"><button class="boton_1">Ver canchas</button></a>
+            <a href="solicitud_registro.html"><button class="boton_2">Crear cuenta</button></a>
         </div>
     </div>
     <section class="informacion">
-        <div class="como_funciona">
+        <div class="como_funciona" id="como_funciona">
             <h1 class="titulo_informacion">¿Como funciona?</h1>
             <dic class="funciones">
                 <div class="seccion_informacion">
@@ -78,14 +74,15 @@
             <a href="info_compradores.html"><button>Consultar</button></a>
         </div>
     </section>
-    <section class="canchas">
+    <section class="canchas" id="canchas">
         <h1>Canchas con c&aacute;maras</h1>
         <div class="canchas_camaras">
             <div class="data_canchas">
                 <a href="">
                     <img src="../img/Cancha_futgol.JPG" alt="">
                     <h3>Cancha Futgol</h3>
-                    <p>Bogota</p>
+                    <p>Ciudad: Bogota</p>
+                    <p>Suba</p>
                     <button>Futbol 5</button>
                 </a>
             </div>
@@ -93,12 +90,13 @@
                 <a href="">
                     <img src="../img/estadio_153.JPG" alt="">
                     <h3>Estadio 153</h3>
-                    <p>Bogota</p>
-                    <button>Futbol 5</button>
+                    <p>Ciudad: Bogota</p>
+                    <p>Suba</p>
+                    <button>Futbol 7</button>
                 </a>
             </div>
         </div>
-        <a href="" class="ver_canchas">Ver todas las canchas</a>
+        <a href="canchas.html" class="ver_canchas">Ver todas las canchas</a>
     </section>
     <section class="consulta">
         <div class="contacto">
@@ -107,7 +105,7 @@
                 <p>Instalamos c&aacute;maras inteligentes y te ayudamos a generar m&aacute;s ingresos con un servicio innovador</p>
             </div>
             <div class="solicitar">
-                <a href="https://wa.me/573001234567?text=Hola,%20quiero%20mas%20información%20de%20las%20cámaras%20para%20mi%20cancha." target="_blank">
+                <a href="https://wa.me/573118522488?text=Hola,%20quiero%20mas%20información%20de%20las%20cámaras%20para%20mi%20cancha." target="_blank">
                 <button><strong>Solicitar informaci&oacute;n</strong></button>
             </a>
             </div>
@@ -131,7 +129,6 @@
             <h3>Empresa</h3>
             <ul>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
                 <li><a href="#">Terminos y condiciones</a></li>
                 <li><a href="#">Politica de privacidad</a></li>
             </ul>

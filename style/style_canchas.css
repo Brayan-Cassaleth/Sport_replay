@@ -1,0 +1,114 @@
+*{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 1260px;
+    margin: auto;
+    background-color: #0C1014;
+}
+
+.encabezado{
+    width: 100%;
+    height: 150px;
+    background-image: url("../img/encabezado_canchas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.encabezado .titulo{
+    width: 500px;
+    height: 150px;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+.encabezado .titulo h1{
+    margin-bottom: 0;
+}
+
+.encabezado .titulo p{
+    margin-top: 0;
+}
+
+.canchas{
+    color: aliceblue;
+}
+
+.canchas h1{
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+}
+
+.canchas .canchas_camaras{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 1200px;
+    margin: 40px auto;
+}
+
+.canchas .canchas_camaras .data_canchas{
+    border: 1px solid gray;
+    width: 200px;
+    height: 260px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.canchas .canchas_camaras .data_canchas:hover{
+    box-shadow: 5px 5px 20px gray;
+    translate: -5px -5px;
+}
+
+.canchas .canchas_camaras .data_canchas a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.canchas .canchas_camaras .data_canchas a img{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.canchas .canchas_camaras .data_canchas a h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.canchas .canchas_camaras .data_canchas a p{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px
+}
+
+.canchas .canchas_camaras .data_canchas a button{
+    height: 20px;
+    width: 80px;
+    font-size: 15px;
+    color:aliceblue;
+    background: #29A71A;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.canchas .ver_canchas{
+    text-decoration: none;
+    color: #29A71A;
+    margin-top: 20px;
+    margin-left: 530px;
+    font-size: 20px;
+}
+
+.canchas .ver_canchas:hover{
+    text-decoration: underline;
+}
