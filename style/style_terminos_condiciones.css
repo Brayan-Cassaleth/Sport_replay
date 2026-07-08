@@ -1,0 +1,65 @@
+body{
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
+    background-color: #0C1014;
+    color: aliceblue;
+}
+
+.contenido{
+    background-image: url('../img/fondo_registro.png');
+    background-size: cover;      /* Ajusta la imagen */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcional */
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.contenido .terminos{
+    border: none;
+    border-radius: 10px;
+    max-width: 1000px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    background: #0C1014;
+    color: aliceblue;
+    opacity: .9;
+    box-shadow: 20px 20px 20px black;
+    box-sizing: border-box;
+}
+
+.contenido .terminos h1{
+    margin-bottom: 0;
+    width: 800px;
+    margin: auto;
+}
+
+.contenido .terminos h3{
+    margin-top: 0;
+    width: 800px;
+    margin: auto;
+}
+
+.contenido .terminos ol li{
+    width: 800px;
+    margin-left: 20px;
+}
+
+.contenido .terminos ol p{
+    width: 800px;
+    margin-left: 40px;
+}
+
+.contenido .terminos h2{
+    width: 800px;
+    margin-left: 20px;
+}
+
+.contenido .terminos p{
+    margin-left: 40px;
+    width: 800px;
+}
