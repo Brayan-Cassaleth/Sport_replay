@@ -9,31 +9,32 @@
 </head>
 <body>
     <div class="contenido">
-        <form action="" id="solicitar_instalacion">
+        <form action="../database/db.php" method="POST" id="solicitar_instalacion">
+
             <h1>Registrarse</h1>
             <h4>Completa el formulario para registrarse</h4>
 
             <label for="">Nombre completo</label><br>
-            <input type="text" placeholder="Ingresa tu nombre completo" required><br>
+            <input type="text" placeholder="Ingresa tu nombre completo" name="nombre" required><br>
 
             <label for="">Correo electronico</label><br>
-            <input type="email" placeholder="Ingresa tu correo electronico" required><br>
+            <input type="email" placeholder="Ingresa tu correo electronico" name="correo" required><br>
 
             <label for="">Usuario</label><br>
-            <input type="text" placeholder="ingresa un nombre de usuario" required><br>
+            <input type="text" placeholder="ingresa un nombre de usuario" required name="usuario"><br>
 
             <label for="">Contraseña</label><br>
-            <input type="passwrod" placeholder="Ingresa una contraseña" required><br>
+            <input type="password" placeholder="Ingresa una contraseña" required name="clave"><br>
 
             <label for="">Confirmar contraseña</label><br>
-            <input type="password" placeholder="Confirmar la contraseña" required><br>
+            <input type="password" placeholder="Confirmar la contraseña" required name="confirmar_clave"><br>
 
             <div class="acuerdo">
                 <input type="checkbox" class="check">
                 <p class="terminos">He le&iacute;do y acepto los <a href="terminos_condiciones.html" target="_blank" class="acepto">T&eacute;rminos y Condiciones</a> y la Pol&iacute;tica de Privacidad de Sport Replay, y autorizo el tratamiento de mis datos personales conforme a la legislación colombiana.</p>
             </div>
             
-            <button class="solicitar">Registrarse</button>
+            <button type="submit" class="solicitar">Registrarse</button>
             <a href="index.html">Cancelar</a>
 
         </form>

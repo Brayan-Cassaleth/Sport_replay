@@ -4,10 +4,88 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     width: 1260px;
     margin: auto;
     background-color: #0C1014;
+}
+
+.navegacion{
+    min-height: 50px;
+    width: 100%;
+    max-width: 1260px;
+    background-color: #0C1014;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.navegacion .logo{
+    height: 50px;
+    margin-left: 0;
+    border-radius: 5px;
+}
+
+.navegacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+    height: 80px;
+}
+
+.buscador {
+    display: flex;
+    width: 250px;
+    border: 2px solid #237916;
+    border-radius: 30px;
+    overflow: hidden;
+    background: white;
+}
+
+.buscador input {
+    flex: 1;
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    outline: none;
+    color: #0C1014;
+}
+
+.buscador .buscar {
+    background-color: #44bd32;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.buscador .buscar:hover {
+    background-color: #237916;
+}
+
+.navegacion .cerrar_sesion{
+    height: 30px;
+    width: 130px;
+    margin-right: 0;
+    background: #eb4d4b;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+}
+
+.navegacion .cerrar_sesion:hover{
+    cursor: pointer;
+    background: #bb211e;
 }
 
 .encabezado{
@@ -52,4 +130,26 @@ body{
     width: 250px;
     border-radius: 10px;
     margin-bottom: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px){
+    .navegacion{
+        justify-content: center;
+        text-align: center;
+        padding: 10px 15px;
+    }
+    .navegacion .logo{
+        margin-bottom: 10px;
+    }
+    .navegacion ul{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .navegacion ul li{
+        margin: 8px 12px;
+    }
+    .navegacion button{
+        margin-bottom: 10px;
+    }
 }
