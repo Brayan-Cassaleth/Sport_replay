@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu_lateral{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #212c36;
+    padding: 20px;
+}
+
+.menu_lateral img{
+    height: 50px;
+    border-radius: 5px;
+}
+
+.menu_lateral .menu a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 5px;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.menu_lateral .menu a:hover{
+    cursor: pointer;
+    background-color: #29A71A;
+}
+
+.menu_lateral .cerrar{
+    color: #29A71A;
+    text-decoration: none;
+    margin-top: 100px;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.menu_lateral .cerrar:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contenido{
+    background-color: #0C1014;
+    height: 100vh;
+    margin-left: 250px;
+}
+
+.contenido .registrar_cancha{
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    color:aliceblue;
+    background: #29A71A;
+    border: none;
+    border-radius: 5px;
+}
+
+.contenido .registrar_cancha:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.contenido .menu_superior{
+    height: 60px;
+}
+
+.contenido .menu_superior .registrar img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+
+.contenido .menu_superior .registrar img:hover{
+    box-shadow: 2px 2px 10px gray;
+}
