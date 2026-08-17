@@ -24,10 +24,75 @@
     </aside>
     <main class="contenido">
         <div class="menu_superior">
-            <a href="" class="registrar"><img src="../img/icon/crear_cuenta.png" alt=""></a>
-            <a href="" class="registrar"><img src="../img/icon/crear_cancha.png" alt=""></a>
-            <a href="" class="registrar"><img src="../img/icon/cargar_videos.jfif" alt=""></a>
+            <button class="registrar" onclick="document.getElementById('RegistrarCancha').showModal()">
+                <img src="../img/icon/crear_cancha.png" alt="">
+            </button>
+            <button class="registrar" onclick="document.getElementById('RegistrarVideo').showModal()">
+                <img src="../img/icon/cargar_videos.jfif" alt="">
+            </button>
         </div>
+        <div class="estadisticas">
+            <div class="estados">
+                <img src="../img/icon/usuarios.jfif" alt="">
+                <h2>Jugadores registrados</h2>
+                <h3>2</h3>
+            </div>
+            <div class="estados">
+                <img src="../img/icon/cancha.png" alt="">
+                <h2>Canchas registradas</h2>
+                <h3>5</h3>
+            </div>
+            <div class="estados">
+                <img src="../img/icon/videos_registrados.jfif" alt="">
+                <h2>Videos registrados</h2>
+                <h3>4</h3>
+            </div>
+            <div class="estados">
+                <img src="../img/icon/almacenamiento.jfif" alt="">
+                <h2>Almacenamiento usado</h2>
+                <h3>20 GB</h3>
+            </div>
+        </div>
+        <div class="navegacion">
+            <input type="text" placeholder="Buscar">
+            <button class="buscar">🔍</button>
+        </div>
+
+        <dialog id="RegistrarCancha" class="registros">
+            <form action="" method="post" class="registrarDatos" id="Registro_Cancha">
+                <h2>Registrar una cancha</h2>
+                <p>Aqui realizar&aacute;s el registro de canchas</p>
+
+                <input type="text" class="datos" placeholder="Nombre de la cancha">
+                <input type="text" class="datos" placeholder="Ciudad">
+                <input type="text" class="datos" placeholder="Localidad">
+                <input type="text" class="datos" placeholder="Direccion">
+                <input type="text" class="datos" placeholder="Telefono">
+                <input type="text" class="datos" placeholder="Cantidad de canchas">
+                <input type="text" class="datos" placeholder="Tipo de cancha">
+                <input type="text" class="datos" placeholder="foto de cancha">
+                <input type="text" class="datos" placeholder="Propietario">
+            </form>
+            <button type="submit" form="Registro_Cancha" class="boton_cerrar">Guardar</button>
+
+            <button onclick="document.getElementById('RegistrarCancha').close()" class="boton_cerrar">Cerrar</button>
+        </dialog>
+
+        <dialog id="RegistrarVideo" class="registros">
+            <form action="" method="post" class="registrarDatos" id="Registro_Video">
+                <h2>Cargar video</h2>
+                <p>Aqui realizar&aacute;s la carga de videos</p>
+
+                <input type="number" class="datos" placeholder="Partido">
+                <input type="text" class="datos" placeholder="Nombre del video">
+                <input type="text" class="datos" placeholder="Ruta de video">
+                <input type="datetime" class="datos" placeholder="Fecha">
+            </form>
+            <button type="submit" form="Registro_Video" class="boton_cerrar">Guardar</button>
+
+            <button onclick="document.getElementById('RegistrarVideo').close()" class="boton_cerrar">Cerrar</button>
+        </dialog>
     </main>
+    
 </body>
 </html>

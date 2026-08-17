@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
 }
 
 .menu_lateral{
@@ -57,31 +58,129 @@
     margin-left: 250px;
 }
 
-.contenido .registrar_cancha{
-    height: 40px;
-    width: 150px;
-    font-size: 15px;
-    color:aliceblue;
-    background: #29A71A;
-    border: none;
-    border-radius: 5px;
-}
-
-.contenido .registrar_cancha:hover{
-    cursor: pointer;
-    box-shadow: 2px 2px 10px gray;
-}
-
 .contenido .menu_superior{
     height: 60px;
 }
 
-.contenido .menu_superior .registrar img{
-    width: 50px;
-    border-radius: 50%;
+.contenido .menu_superior .registrar{
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
     margin: 10px 10px;
+    background-color: #0C1014;
+    border: none;
 }
 
-.contenido .menu_superior .registrar img:hover{
+.contenido .menu_superior .registrar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contenido .menu_superior .registrar:hover{
     box-shadow: 2px 2px 10px gray;
+    cursor: pointer;
+}
+
+.contenido .estadisticas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.contenido .estadisticas .estados{
+    background-color: #212c36;
+    width: 230px;
+    border-radius: 10px;
+    margin: auto;
+    height: 130px;
+    padding-top: 10px;
+}
+
+.contenido .estadisticas .estados h2{
+    font-size: 18px;
+    height: 20px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.contenido .estadisticas .estados h3{
+    font-size: 25px;
+    margin: auto;
+    width: 70px;
+    text-align: center;
+}
+
+.contenido .estadisticas .estados img{
+    height: 60px;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.contenido .navegacion{
+    width: 1000px;
+    margin: auto;
+}
+
+.contenido .navegacion input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: black;
+    border: none;
+}
+
+.contenido .navegacion .buscar{
+    background-color: #44bd32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    height: 28px;
+}
+
+.contenido .registros{
+    background-color: #0C1014;
+    border: 1px solid #44bd32;
+    height: 550px;
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+    padding: 30px 30px;
+}
+
+.contenido .registros .registrarDatos .datos{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin: 10px 30px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.contenido .registros .registrarDatos p{
+    margin-bottom: 20px;
+}
+
+.contenido .registros .boton_cerrar{
+    background: #44bd32;
+    border: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contenido .registros .boton_cerrar:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
 }
