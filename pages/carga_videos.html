@@ -22,6 +22,7 @@
         <div class="titulo">
             <h1>Brayan Cassaleth Ramirez</h1>
             <h3>Cantidad de partidos => 1</h3>
+            <button type="button" class="solicitar" onclick="document.getElementById('Solicitar_video').showModal()">Solicitar video</button>
         </div>
     </div>
     <section class="videos">
@@ -61,6 +62,29 @@
             </ul>
         </div>
     </footer>
-    <p class="copy">&copy; 2026 SportZone. Todos los derechos reservados.</p>
+    <p class="copy">&copy; 2026 SportReplay. Todos los derechos reservados.</p>
+
+    <dialog id="Solicitar_video" class="registros">
+            <form action="" method="post" class="SolicitarVideos" id="solicitar_video">
+                <h1>Solicitud de videos</h1>
+                <p>Aqui realizar&aacute;s la solicitud de tus videos</p>
+
+                <label for="">Fecha del partido</label>
+                <input type="date" class="datos" placeholder="Fecha del partido"><br>
+
+                <label for="">Hora del partido</label>
+                <input type="time" class="datos" placeholder="Hora del partido"><br>
+
+                <label for="">Ubicacion de la cancha</label>
+                <input type="text" class="datos" placeholder="Ubicacion de la Cancha"><br>
+
+                <label for="">Cancha en la que se jugo</label>
+                <input type="number" class="datos" placeholder="Cancha"><br>
+
+            </form>
+            <button type="submit" form="Registro_Cancha" class="boton_cerrar">Guardar</button>
+
+            <button onclick="document.getElementById('Solicitar_video').close()" class="boton_cerrar">Cerrar</button>
+        </dialog>
 </body>
 </html>

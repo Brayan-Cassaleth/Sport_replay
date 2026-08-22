@@ -81,6 +81,7 @@ body{
     border-radius: 8px;
     color: white;
     font-size: 13px;
+    transition: background-color 0.3s;
 }
 
 .navegacion .cerrar_sesion:hover{
@@ -90,7 +91,7 @@ body{
 
 .encabezado{
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-image: url("../img/encabezado_partidos.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,6 +111,20 @@ body{
 
 .encabezado .titulo h3{
     margin-top: 0;
+}
+
+.encabezado .titulo .solicitar{
+    background-color: #44bd32;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    transition: box-shadow 0.2s;
+}
+
+.encabezado .titulo .solicitar:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .videos{
@@ -132,6 +147,50 @@ body{
     margin-bottom: 0;
 }
 
+.registros{
+    background-color: #0C1014;
+    border: 1px solid #44bd32;
+    height: 400px;
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+    padding: 30px 30px;
+}
+
+.registros .SolicitarVideos .datos{
+    width: 200px;
+    height: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.registros .SolicitarVideos h1{
+    margin-bottom: 0;
+}
+
+.registros .SolicitarVideos p{
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.registros .boton_cerrar{
+    background: #44bd32;
+    border: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.registros .boton_cerrar:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+}
 /* ===== Responsive ===== */
 @media (max-width: 768px){
     .navegacion{
