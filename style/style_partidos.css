@@ -44,7 +44,7 @@ body{
     display: flex;
     width: 250px;
     border: 2px solid #237916;
-    border-radius: 30px;
+    border-radius: 10px;
     overflow: hidden;
     background: white;
 }
@@ -96,10 +96,12 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .encabezado .titulo{
-    width: 500px;
+    width: 800px;
     height: 150px;
     margin-left: 100px;
     padding-top: 20px;
@@ -125,6 +127,22 @@ body{
 .encabezado .titulo .solicitar:hover{
     cursor: pointer;
     box-shadow: 5px 5px 5px gray;
+}
+
+.encabezado .estado{
+    background-color: #44bd32;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 150px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.encabezado .estado .estado_actual{
+    margin-top: 2px;
+    text-align: center;
+    font-size: 18px;
 }
 
 .videos{
